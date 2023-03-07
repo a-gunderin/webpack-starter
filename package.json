@@ -4,7 +4,10 @@
 	"description": "Foundation for webpack based frontend project",
 	"private": true,
 	"type": "module",
-	"scripts": {},
+	"scripts": {
+		"build": "webpack -c webpack.config.js",
+		"start": "webpack serve"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/a-gunderin/webpack-starter.git"
@@ -17,6 +20,7 @@
 	},
 	"homepage": "https://github.com/a-gunderin/webpack-starter#readme",
 	"devDependencies": {
+		"atomizer-plugins": "^1.2.1",
 		"css-loader": "^6.7.3",
 		"pug": "^3.0.2",
 		"pug-plugin": "^4.9.5",

@@ -3,10 +3,21 @@ import { fileURLToPath } from 'url';
 
 import PugPlugin from 'pug-plugin';
 
+import atomizerConfig from './atomizer.config.js';
+
+import { webpack as atomizerWebpack } from 'atomizer-plugins';
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const atomizer = atomizerWebpack({
+	config: atomizerConfig,
+	outfile: path.join(__dirname, 'dist', 'css/atomizer.css'),
+});
+
 const config = {
+
+	target: 'web',
 
 	mode: 'development',
 
@@ -15,7 +26,7 @@ const config = {
 	},
 
 	output: {
-		publicPath: './',
+		publicPath: 'auto',
 		path: path.join(__dirname, 'dist'),
 	},
 
@@ -29,6 +40,7 @@ const config = {
 				filename: 'css/[name].css?v[contenthash:8]',
 			},
 		}),
+		atomizer,
 	],
 
 	module: {
@@ -48,9 +60,9 @@ const config = {
 		static: {
 			directory: path.join(__dirname, 'dist'),
 		},
-		watchFiles: {
-			paths: ['src/**/*.*'],
-		},
+		open: true,
+		hot: false,
+		liveReload: true,
 	},
 
 };

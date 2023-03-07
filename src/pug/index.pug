@@ -5,12 +5,13 @@ head
 	meta(name='viewport' content='width=device-width, initial-scale=1.0')
 	title Document
 body
-	h1 Hello World!
-	p
-		| Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Veritatis dignissimos maxime soluta est doloremque quia voluptatem facilis porro amet sequi!
+	h1(class="Fw(b) Fz(2rem)") Hello World!
+	p(class="Fw(b) C(limegreen)").
+		Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Veritatis dignissimos maxime soluta est doloremque quia voluptatem facilis porro amet sequi!
 	ul
 		li Lorem
 		li Ipsum
 		li Dolor
 	link(href=require('../sass/style.sass') rel='stylesheet')
+	link(href=('css/atomizer.css') rel='stylesheet')
 	script(src=require('../js/app.js'))
