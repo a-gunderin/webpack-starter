@@ -1,10 +1,6 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
-
-import PugPlugin from 'pug-plugin';
-
 import atomizerConfig from './atomizer.config.js';
-
 import { webpack as atomizerWebpack } from 'atomizer-plugins';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -16,74 +12,34 @@ const atomizer = atomizerWebpack({
 });
 
 const config = {
-
-	target: 'web',
-
-	mode: 'development',
+	mode: 'production',
 
 	entry: {
-		index: './src/pug/index.pug',
+		image: './src/image.js',
 	},
 
 	output: {
-		publicPath: 'auto',
 		path: path.join(__dirname, 'dist'),
+		publicPath: '/',
+		clean: true,
 	},
 
 	plugins: [
-		new PugPlugin({
-			pretty: true,
-			js: {
-				filename: 'js/[name].js?v=[contenthash:8]',
-			},
-			css: {
-				filename: 'css/[name].css?v=[contenthash:8]',
-			},
-		}),
 		atomizer,
 	],
 
 	module: {
 		rules: [
-
 			{
-				test: /\.pug$/,
-				loader: PugPlugin.loader,
-			},
-
-			{
-				test: /\.(css|sass|scss)$/,
-				use: ['css-loader', 'sass-loader'],
-			},
-
-			{
-				test: /\.(png|jpe?g|webp|gif)$/i,
+				test: /\.(png|svg)$/i,
 				type: 'asset/resource',
 				generator: {
-					filename: 'images/[name].[hash:8][ext]',
+					filename: 'img/[name].[hash:8][ext]',
 				},
 			},
-
-			{
-				test: /\.svg$/i,
-				type: 'asset/resource',
-				generator: {
-					filename: 'svg/[name].[hash:8][ext]',
-				},
-			}
 		],
 
 	},
-
-	devServer: {
-		static: {
-			directory: path.join(__dirname, 'dist'),
-		},
-		open: true,
-		hot: false,
-		liveReload: true,
-	},
-
 };
 
 export default config;
