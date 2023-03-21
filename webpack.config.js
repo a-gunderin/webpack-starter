@@ -42,8 +42,8 @@ const config = {
 			},
 
 			{
-				test: /\.(css|sass|scss)$/,
-				use: ['css-loader', 'sass-loader'],
+				test: /\.css$/,
+				use: ['css-loader', 'postcss-loader'],
 			},
 
 			{

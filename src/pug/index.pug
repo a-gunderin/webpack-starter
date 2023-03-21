@@ -5,8 +5,8 @@ head
 	meta(name='viewport' content='width=device-width, initial-scale=1.0')
 	title Document
 body
-	h1(class='Fw(b) Fz(2rem)') Hello World!
-	p(class='Fw(b) C(limegreen)').
+	h1(class='font-bold uppercase') Hello World!
+	p(class='leading-6').
 		Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Veritatis dignissimos maxime soluta est doloremque quia voluptatem facilis porro amet sequi!
 	ul
 		li Lorem
@@ -18,5 +18,5 @@ body
 	img(src=require('../images/test.webp') alt='Test Image')
 	img(src=require('../svg/test.svg') alt='Test Image' width='100')
 
-	link(href=require('../sass/style.sass') rel='stylesheet')
+	link(href=require('../css/style.css') rel='stylesheet')
 	script(src=require('../js/app.js'))
