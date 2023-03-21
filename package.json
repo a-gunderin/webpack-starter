@@ -20,7 +20,6 @@
 	},
 	"homepage": "https://github.com/a-gunderin/webpack-starter#readme",
 	"devDependencies": {
-		"atomizer-plugins": "^1.2.1",
 		"css-loader": "^6.7.3",
 		"pug": "^3.0.2",
 		"pug-plugin": "^4.9.5",
