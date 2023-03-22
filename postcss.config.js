@@ -1,9 +1,6 @@
-import postcssPresetEnv from 'postcss-preset-env';
-import tailwindcss from 'tailwindcss';
-
-export default {
+module.exports = {  
 	plugins: [
-		postcssPresetEnv,
-		tailwindcss,
-	]
-}
+		'postcss-preset-env',
+		'tailwindcss',
+	],
+};
