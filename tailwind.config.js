@@ -1,3 +1,5 @@
-export default {
-	content: ['./src/pug/*.pug'],
+module.exports = {
+	content: [
+		'./src/pug/*.pug',
+	],
 };

@@ -3,7 +3,6 @@
 	"version": "1.0.0",
 	"description": "Foundation for webpack based frontend project",
 	"private": true,
-	"type": "module",
 	"scripts": {
 		"build": "webpack",
 		"start": "webpack serve"
@@ -24,11 +23,10 @@
 		"postcss": "^8.4.21",
 		"postcss-loader": "^7.1.0",
 		"postcss-preset-env": "^8.0.1",
-		"pug": "^3.0.2",
-		"pug-plugin": "^4.9.5",
+		"pug-plugin": "^4.9.7",
 		"tailwindcss": "^3.2.7",
-		"webpack": "^5.75.0",
+		"webpack": "^5.76.2",
 		"webpack-cli": "^5.0.1",
-		"webpack-dev-server": "^4.11.1"
+		"webpack-dev-server": "^4.13.1"
 	}
 }

@@ -1,22 +1,22 @@
 doctype html
+html
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		title Document
+		link(href=require('../css/style.css') rel='stylesheet')
+	body.bg-red-500
+		h1(class='font-bold uppercase') Hello World!
+		p(class='leading-6').
+			Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Veritatis dignissimos maxime soluta est doloremque quia voluptatem facilis porro amet sequi!
+		ul
+			li Lorem
+			li Ipsum
+			li Dolor
 
-head
-	meta(charset='UTF-8')
-	meta(name='viewport' content='width=device-width, initial-scale=1.0')
-	title Document
-body
-	h1(class='font-bold uppercase') Hello World!
-	p(class='leading-6').
-		Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Veritatis dignissimos maxime soluta est doloremque quia voluptatem facilis porro amet sequi!
-	ul
-		li Lorem
-		li Ipsum
-		li Dolor
+		img(src=require('../images/test.jpg') alt='Test Image')
+		img(src=require('../images/test.png') alt='Test Image')
+		img(src=require('../images/test.webp') alt='Test Image')
+		img(src=require('../svg/test.svg') alt='Test Image' width='100')
 
-	img(src=require('../images/test.jpg') alt='Test Image')
-	img(src=require('../images/test.png') alt='Test Image')
-	img(src=require('../images/test.webp') alt='Test Image')
-	img(src=require('../svg/test.svg') alt='Test Image' width='100')
-
-	link(href=require('../css/style.css') rel='stylesheet')
-	script(src=require('../js/app.js'))
+		script(src=require('../js/app.js'))

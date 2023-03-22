@@ -1,13 +1,7 @@
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-import PugPlugin from 'pug-plugin';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const path = require('path');
+const PugPlugin = require('pug-plugin');
 
 const config = {
-
 	target: 'web',
 
 	mode: 'development',
@@ -76,4 +70,4 @@ const config = {
 
 };
 
-export default config;
+module.exports = config;
