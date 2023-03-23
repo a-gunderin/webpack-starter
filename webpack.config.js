@@ -13,6 +13,7 @@ const config = {
 	output: {
 		publicPath: 'auto',
 		path: path.join(__dirname, 'dist'),
+		clean: true,
 	},
 
 	plugins: [
