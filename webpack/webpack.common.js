@@ -4,15 +4,13 @@ const PugPlugin = require('pug-plugin');
 const config = {
 	target: 'web',
 
-	mode: 'development',
-
 	entry: {
 		index: './src/pug/index.pug',
 	},
 
 	output: {
 		publicPath: 'auto',
-		path: path.join(__dirname, 'dist'),
+		path: path.join(__dirname, '../dist'),
 		clean: true,
 	},
 
@@ -58,15 +56,6 @@ const config = {
 			}
 		],
 
-	},
-
-	devServer: {
-		static: {
-			directory: path.join(__dirname, 'dist'),
-		},
-		open: true,
-		hot: false,
-		liveReload: true,
 	},
 
 };
