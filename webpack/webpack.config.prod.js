@@ -1,5 +1,6 @@
 const commonConfig = require('./webpack.common.js');
 const path = require('path');
+const PugPlugin = require('pug-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 
@@ -7,6 +8,18 @@ const config = {
 	...commonConfig,
 
 	mode: 'production',
+
+	plugins: [
+		new PugPlugin({
+			pretty: false,
+			js: {
+				filename: 'js/[name].js?v=[contenthash:8]',
+			},
+			css: {
+				filename: 'css/[name].css?v=[contenthash:8]',
+			},
+		}),
+	],
 
 	optimization: {
 		minimize: true,

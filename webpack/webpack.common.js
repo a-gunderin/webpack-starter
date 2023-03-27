@@ -14,18 +14,6 @@ const config = {
 		clean: true,
 	},
 
-	plugins: [
-		new PugPlugin({
-			pretty: true,
-			js: {
-				filename: 'js/[name].js?v=[contenthash:8]',
-			},
-			css: {
-				filename: 'css/[name].css?v=[contenthash:8]',
-			},
-		}),
-	],
-
 	module: {
 		rules: [
 
