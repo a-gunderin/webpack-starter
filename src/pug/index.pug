@@ -8,18 +8,15 @@ html
 		title Document
 		link(href=require('../css/style.css') rel='stylesheet')
 
-	body.bg-slate-50
-		h1.font-bold.uppercase Hello World!
-		p.leading-6.
-			Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Veritatis dignissimos maxime soluta est doloremque quia voluptatem facilis porro amet sequi!
-		ul
-			li Lorem
-			li Ipsum
-			li Dolor
+	body
 
-		img(src=require('../images/test.jpg') alt='Test Image')
-		img(src=require('../images/test.png') alt='Test Image')
-		img(src=require('../images/test.webp') alt='Test Image')
-		img(src=require('../svg/test.svg') alt='Test Image' width='100')
+		- const titleClass = 'text-center uppercase font-bold text-3xl tracking-wider my-3';
+		h1(class=titleClass) Pages
+
+		nav.max-w-3xl.mx-auto.flex.flex-col.items-start
+			- const linkClass = 'uppercase font-medium text-lg tracking-wide my-1 hover:underline decoration-2';
+			a(href="pages/home.html" class=linkClass) Home
+			a(href="pages/about.html" class=linkClass) About
+			a(href="pages/contact.html" class=linkClass) Contact
 
 		script(src=require('../js/app.js'))

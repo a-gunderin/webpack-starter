@@ -21,11 +21,15 @@ const config = {
 
 	devServer: {
 		static: {
-			directory: path.resolve(__dirname, '../dist'),
+			directory: path.join(__dirname, '../dist'),
+		},
+		watchFiles: {
+			paths: ['src/**/*.*'],
+			options: {
+				usePolling: true,
+			},
 		},
 		open: true,
-		hot: false,
-		liveReload: true,
 	},
 
 };

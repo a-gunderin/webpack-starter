@@ -6,6 +6,9 @@ const config = {
 
 	entry: {
 		index: './src/pug/index.pug',
+		'pages/home': './src/pug/pages/home.pug',
+		'pages/about': './src/pug/pages/about.pug',
+		'pages/contact': './src/pug/pages/contact.pug',
 	},
 
 	output: {

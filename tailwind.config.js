@@ -1,6 +1,6 @@
 module.exports = {
 	content: [
-		'./src/pug/*.pug',
+		'./src/pug/**/*.pug',
 	],
 	corePlugins: {
 		preflight: true,
