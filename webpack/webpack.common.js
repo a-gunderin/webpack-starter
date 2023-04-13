@@ -44,7 +44,7 @@ const config = {
 				generator: {
 					filename: 'svg/[name].[hash:8][ext]',
 				},
-			}
+			},
 		],
 
 	},

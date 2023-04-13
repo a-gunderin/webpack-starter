@@ -1,8 +1,7 @@
-const commonConfig = require('./webpack.common.js');
-const path = require('path');
 const PugPlugin = require('pug-plugin');
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
-const TerserPlugin = require("terser-webpack-plugin");
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
+const commonConfig = require('./webpack.common.js');
 
 const config = {
 	...commonConfig,
@@ -27,14 +26,14 @@ const config = {
 			new CssMinimizerPlugin({
 				minimizerOptions: {
 					preset: [
-						"default",
-						{ discardComments: { removeAll: true }, },
+						'default',
+						{ discardComments: { removeAll: true } },
 					],
 				},
 			}),
 			new TerserPlugin(),
-		]
-	}
+		],
+	},
 
 };
 

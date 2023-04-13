@@ -1,6 +1,6 @@
-const commonConfig = require('./webpack.common.js');
 const path = require('path');
 const PugPlugin = require('pug-plugin');
+const commonConfig = require('./webpack.common.js');
 
 const config = {
 	...commonConfig,
