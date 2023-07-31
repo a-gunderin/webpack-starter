@@ -40,7 +40,7 @@ const config = {
 
 			{
 				test: /\.svg$/i,
-				include: [ path.resolve(__dirname, '../src/svg/images/'), ],
+				include: [path.resolve(__dirname, '../src/svg/images/')],
 				type: 'asset/resource',
 				generator: {
 					filename: 'svg/images/[name].[hash:8][ext]',

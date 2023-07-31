@@ -22,19 +22,19 @@
 	},
 	"homepage": "https://github.com/a-gunderin/webpack-starter#readme",
 	"devDependencies": {
-		"css-loader": "^6.7.3",
-		"css-minimizer-webpack-plugin": "^5.0.0",
-		"eslint": "^8.2.0",
-		"eslint-config-airbnb-base": "^15.0.0",
-		"eslint-plugin-import": "^2.25.2",
-		"postcss": "^8.4.21",
-		"postcss-loader": "^7.1.0",
-		"postcss-preset-env": "^8.0.1",
-		"pug-plugin": "^4.9.7",
-		"tailwindcss": "^3.3.1",
-		"terser-webpack-plugin": "^5.3.7",
-		"webpack": "^5.76.2",
-		"webpack-cli": "^5.0.1",
-		"webpack-dev-server": "^4.13.1"
+		"css-loader": "latest",
+		"css-minimizer-webpack-plugin": "latest",
+		"eslint": "latest",
+		"eslint-config-airbnb-base": "latest",
+		"eslint-plugin-import": "latest",
+		"postcss": "latest",
+		"postcss-loader": "latest",
+		"postcss-preset-env": "latest",
+		"pug-plugin": "latest",
+		"tailwindcss": "latest",
+		"terser-webpack-plugin": "latest",
+		"webpack": "latest",
+		"webpack-cli": "latest",
+		"webpack-dev-server": "latest"
 	}
 }
