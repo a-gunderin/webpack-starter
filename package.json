@@ -27,7 +27,7 @@
 		"eslint": "latest",
 		"eslint-config-airbnb-base": "latest",
 		"eslint-plugin-import": "latest",
-		"postcss": "latest",
+		"postcss": "^8.4.35",
 		"postcss-loader": "latest",
 		"postcss-preset-env": "latest",
 		"pug-plugin": "latest",
